@@ -12,6 +12,7 @@ type Props = {
     author: {
       name: string;
       username: string;
+      displayPicture: string;
     };
     content: string;
   };
@@ -30,9 +31,13 @@ export default function Tweet({ tweet: { author, content } }: Props) {
   return (
     <div className="border-t border-t-gray-600 p-4">
       <div className="flex justify-between space-x-4">
-        <span className="rounded-full text-center p-4 w-10 h-10 md:w-12 md:h-12 bg-gray-500 items-center flex justify-center">
-          {initials.toUpperCase()}
-        </span>
+        <div>
+          <img
+            className="rounded-full md:w-14 w-28"
+            src={author?.displayPicture}
+            alt={`DP of ${author?.name}`}
+          />
+        </div>
         <div className="flex-auto space-y-1">
           <div className="flex justify-between">
             <div className="space-x-2">

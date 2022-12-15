@@ -47,7 +47,7 @@ export default function Home() {
     <div className="bg-gray-900 text-white text-sm">
       <div className="container mx-auto max-w-7xl min-h-screen flex">
         <div className="fixed flex flex-col items-center justify-center min-h-screen w-16 md:w-24 lg:w-60">
-          <div className="lg:px-4 my-4 flex flex-col justify-center gap-y-6">
+          <div className="lg:px-4 my-4 flex flex-col justify-center gap-y-4">
             <BugAntIcon className="w-6 h-6 md:w-8 md:h-8 text-white font-bold" />
             {sideBarDetails.map((item, index) => (
               <div key={item.title} className="flex items-center lg:gap-4">
@@ -61,11 +61,12 @@ export default function Home() {
           <button className="hidden lg:block mt-4 text-lg bg-sky-600 px-4 py-2 rounded-full font-semibold w-4/5">
             Tweet
           </button>
-          <div className="mt-auto mb-32">
+          <div className="mt-auto mb-6">
             <div className="flex gap-4 items-center">
-              <span className="rounded-full text-center p-4 w-8 h-8 bg-gray-500 items-center flex justify-center">
-                VK
-              </span>
+              <img
+                src="https://pbs.twimg.com/profile_images/1584840401600454657/GnFDd446_x96.jpg"
+                className="rounded-full w-8 h-8"
+              />
               <span className="hidden lg:block">Vinay Khobragade</span>
             </div>
           </div>
@@ -77,9 +78,11 @@ export default function Home() {
           </div>
           {/* Input box */}
           <div className="hidden md:flex mt-8 gap-4 px-4">
-            <span className="rounded-full text-center p-4 w-12 h-12 bg-gray-500 items-center flex justify-center">
-              VK
-            </span>
+            <img
+              className="rounded-full h-14"
+              src="https://pbs.twimg.com/profile_images/1584840401600454657/GnFDd446_x96.jpg"
+              alt="Author DP"
+            />
             <div className="flex-auto">
               <textarea
                 placeholder="What's happening?"
@@ -119,7 +122,7 @@ export default function Home() {
                 />
               </div>
               {/* What's happening side story */}
-              <div className="mt-12 p-4 bg-gray-800 rounded-xl">
+              <div className="mt-8 p-4 bg-gray-800 rounded-xl">
                 <div className="text-xl font-semibold">
                   What&apos;s happening
                 </div>

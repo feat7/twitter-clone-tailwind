@@ -1,5 +1,20 @@
 [
-  { "id": 1, "name": "Elon Musk", "username": "elonmusk" },
-  { "id": 2, "name": "Logy AI", "username": "logyai" },
-  { "id": 3, "name": "Devfest Raipur", "username": "devfestraipur" }
+  {
+    "id": 1,
+    "name": "Elon Musk",
+    "username": "elonmusk",
+    "displayPicture": "https://pbs.twimg.com/profile_images/1590968738358079488/IY9Gx6Ok_x96.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Logy AI",
+    "username": "logyai",
+    "displayPicture": "https://pbs.twimg.com/profile_images/688735459892195329/v8sHaWSG_x96.jpg"
+  },
+  {
+    "id": 3,
+    "name": "GDGRaipur",
+    "username": "gdgraipur",
+    "displayPicture": "https://pbs.twimg.com/profile_images/1490168576359436293/GTK9iUG7_x96.jpg"
+  }
 ]
